@@ -16,6 +16,20 @@
 
     <!--导入hibernate相关配置-->
     <import resource="hibernateApplication.xml"/>
+    <bean id="loginAction" class="web.LoginAction" scope="prototype">
+        <property name="user" ref="user"/>
+        <property name="loginService" ref="loginService"/>
+    </bean>
+    <!--domain-->
+    <bean id="user" class="domain.User"/>
+    <!--service-->
+    <bean id="loginService" class="service.Impl.LoginServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+    <!--dao-->
+    <bean id="userDao" class="dao.Impl.UserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
 
 
 </beans>

@@ -7,7 +7,9 @@
 
     <package name="struts" extends="struts-default">
         <!--spring 当中的id-->
-        <!--<action name="account_*" class="accountAction" method="{1}"/>-->
+        <action name="loginAction_*" class="loginAction" method="{1}">
+            <allowed-methods>login</allowed-methods>
+        </action>
     </package>
 
 </struts>

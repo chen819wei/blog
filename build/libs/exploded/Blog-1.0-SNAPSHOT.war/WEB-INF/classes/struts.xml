@@ -8,7 +8,13 @@
     <package name="struts" extends="struts-default">
         <!--spring 当中的id-->
         <action name="loginAction_*" class="loginAction" method="{1}">
-            <allowed-methods>login</allowed-methods>
+            <result name="login">mgr_login.jsp</result>
+            <result name="success" type="redirect">mgr_index.jsp</result>
+            <result name="login_out" type="redirect">mgr_login.jsp</result>
+            <allowed-methods>login,loginout</allowed-methods>
+        </action>
+        <action name="category_*" class="categoryAction" method="{1}">
+            <allowed-methods>add</allowed-methods>
         </action>
     </package>
 

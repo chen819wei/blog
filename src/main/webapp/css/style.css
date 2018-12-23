@@ -357,7 +357,7 @@ input[type="submit"]:hover, input[type="submit"]:focus {
 	overflow: hidden;
 }
 .edit_content .item1{
-	height: 50px;
+	height: 80px;
 	line-height: 50px;
 }
 .edit_content .item1 div{

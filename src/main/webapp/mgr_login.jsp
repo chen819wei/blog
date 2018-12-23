@@ -13,7 +13,6 @@
 
 	<body>
 		<div id="container">
-			
 			<form action="${pageContext.request.contextPath}/loginAction_login.action" id="login_form">
 				<div class="login">博客后台管理系统
 				  <span style="color:red"><s:actionerror/></span>

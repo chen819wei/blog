@@ -42,6 +42,7 @@
         <property name="mappingResources">
             <list>
                 <value>hbm/User.hbm.xml</value>
+                <value>hbm/Category.hbm.xml</value>
             </list>
         </property>
     </bean>
